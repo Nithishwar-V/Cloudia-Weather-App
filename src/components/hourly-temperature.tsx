@@ -28,7 +28,9 @@ const HourlyTemperature = ({ data }: HourlyTemperatureProps) => {
   return (
     <Card
       className={`flex-1 ${
-        isDark ? "bg-[hsl(241,54%,15%)]" : "bg-[#adbeeb]"
+        isDark
+          ? "bg-[linear-gradient(180deg,#010254,#100221)]"
+          : "bg-[linear-gradient(180deg,#d6e9ff,#d8d5fd)]"
       }`}
     >
       {" "}

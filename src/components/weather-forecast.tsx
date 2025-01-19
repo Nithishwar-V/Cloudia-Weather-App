@@ -53,14 +53,15 @@ const WeatherForecast = ({ data }: WeatherForecastProps) => {
   return (
     <Card
       className={`flex-1 ${
-        isDark ? "bg-[#2a1659]" : "bg-[hsl(241.2,62.5%,84.3%)]"
+        isDark ? "bg-[linear-gradient(180deg,#010254,#100221)]"
+          : "bg-[linear-gradient(180deg,#d6e9ff,#d8d5fd)]"
       }`}
     >
       <CardHeader>
         <CardTitle>5-Day Forecast</CardTitle>
       </CardHeader>
       <CardContent>
-        <div className="grid gap-4">
+        <div className="grid lg:grid-cols-2 gap-4">
           {nextDays.map((day) => {
             return (
               <div

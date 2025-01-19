@@ -36,7 +36,7 @@ const CityPage = () => {
   }
 
   return (
-    <div className="space-y-4">
+    <div className="space-y-4 mt-4 lg:mt-10 px-2 py-2 lg:px-16 lg:py-8">
       {/* FavCities */}
       <div className="flex items-center justify-between">
         <h1 className="text-3xl font-bold tracking-tight">

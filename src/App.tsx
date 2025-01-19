@@ -21,7 +21,7 @@ function App() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      <BrowserRouter>
+      <BrowserRouter basename="/Cloudia-Weather-App">
         <ThemeProvider defaultTheme="dark">
           <Layout>
             <Routes>

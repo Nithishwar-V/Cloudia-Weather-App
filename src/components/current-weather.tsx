@@ -23,7 +23,9 @@ const CurrentWeather = ({ data, locationName }: CurrentWeatherProps) => {
   return (
     <Card
       className={`overflow-hidden ${
-        isDark ? "bg-[#2a1659]" : "bg-[hsl(241.2,62.5%,84.3%)]"
+        isDark
+          ? "bg-[linear-gradient(180deg,#010254,#100221)]"
+          : "bg-[linear-gradient(180deg,#d6e9ff,#d8d5fd)]"
       }`}
     >
       {" "}

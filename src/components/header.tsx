@@ -8,11 +8,21 @@ const Header = () => {
   const isDark = theme === "dark";
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b  bg-background/95 backdrop-blur py-2 supports-[backdrop-filter]:bg-background/60">
+    // <header className="sticky top-0 z-50 w-full border-b  bg-background/95 backdrop-blur py-2 supports-[backdrop-filter]:bg-[#eaf2ec]/70">
+    <header className={`sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur py-2 ${
+      isDark
+        ? 'supports-[backdrop-filter]:bg-[#0a0a0a]/40'
+        : 'supports-[backdrop-filter]:bg-[#ffffff]/40'
+    }`}
+  >
       <div className=" container mx-auto flex h-16 items-center justify-between px-4">
         <Link to={"/"}>
           <img
-            src={isDark ? "/logo.png" : "/logo2.png"}
+            src={
+              isDark
+                ? "/Cloudia-Weather-App/logo.png"
+                : "/Cloudia-Weather-App/logo2.png"
+            }
             alt="Cloudia logo"
             className="h-14"
           />
